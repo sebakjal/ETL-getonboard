@@ -14,7 +14,7 @@ Las tecnologías usadas fueron:
 ### Diagrama Explicativo
 ![Diagrama Explicativo](https://github.com/sebakjal/first_DE_project/blob/main/DiagramaProyecto1.png)
 
-El primer paso es extraer las ofertas de trabajo publicadas durante el día desde la API de getonbrd.cl usando los módulos *requests* y *json* en un script de Python. Este mismo script integra la información de interés a un Dataframe de Pandas, y luego se exporta a un archivo .csv con nombre único. El archivo .csv correspondiente al presente día se importa a una tabla en BigQuery (previamente creada) a través de la CLI de Google Cloud, actuando esta como base de datos. 
+El primer paso es extraer las ofertas de trabajo publicadas durante el día desde la API de getonbrd.cl usando los módulos *requests* y *json* en un script de Python (. Este mismo script integra la información de interés a un Dataframe de Pandas, y luego se exporta a un archivo .csv con nombre único. El archivo .csv correspondiente al presente día se importa a una tabla en BigQuery (previamente creada) a través de la CLI de Google Cloud, actuando esta como base de datos. 
 
 La pipeline está automatizada con Airflow, y corre los scripts de Python y Bash diariamente para poblar la base de datos, enviando un correo cuando el proceso falla en algún punto.
 
