@@ -5,6 +5,7 @@ Las tecnologías usadas fueron:
 - API de getonbrd.cl
 - Python
 - BigQuery
+- Cloud Storage
 - Looker Studio
 - Airflow
 - Bash Scripts
